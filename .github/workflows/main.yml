@@ -62,8 +62,8 @@ jobs:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
         with:
-          host: '62.84.113.156'
-          username: 'zdors'
+          host: 62.84.113.156
+          username: zdors
           key: ${{ secrets.SSH_KEY }}
           # passphrase: ${{ secrets.PASSPHRASE }}
           script: |
